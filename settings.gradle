@@ -1,0 +1,2 @@
+rootProject.name = "EWidgets"
+include ':app'
