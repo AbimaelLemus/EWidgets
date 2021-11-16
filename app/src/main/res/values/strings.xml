@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EWidgets</string>
+    <string name="dataBase">DataBase</string>
 </resources>

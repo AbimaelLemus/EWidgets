@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt' //permite crear dependencias
 }
 
 android {
@@ -30,6 +31,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -42,4 +47,11 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'androidx.room:room-ktx:2.3.0'//androidx ayuda a java
+    kapt "androidx.room:room-compiler:2.3.0"//
+
+    //corruntinas y nos permite utilizar el schope
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
+
 }
