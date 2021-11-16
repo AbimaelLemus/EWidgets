@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this@MainActivity, A_DataBase::class.java))
             }
 
+            btnVariacionDB.setOnClickListener {
+                startActivity(Intent(this@MainActivity, VariacionBaseDeDatos::class.java))
+            }
+
         }
 
 

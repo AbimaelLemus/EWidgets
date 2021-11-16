@@ -3,14 +3,15 @@
     package="com.easyapp.ewidgets">
 
     <application
+        android:name=".RoomApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:name=".RoomApp"
         android:supportsRtl="true"
         android:theme="@style/Theme.EWidgets">
-        <activity android:name=".ui.A_DataBase"></activity>
+        <activity android:name=".ui.VariacionBaseDeDatos"></activity>
+        <activity android:name=".ui.A_DataBase" />
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">
